@@ -1,7 +1,7 @@
 Maze Generation
 ==============
 
-My own custom maze generation algorithm implemented in Python
+Custom Maze Generation in Python
 --------------
 
 This is a Python implementation of a maze generation algorithm of my own design.
