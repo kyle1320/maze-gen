@@ -20,6 +20,7 @@ class Maze:
         previous = random.choice(list(self.visited & neighbors)) # pick a visited cell to connect to
         neighbors = neighbors - self.visited  # we only want the new, unvisited neighbors from here on
 
+        self.edge |= neighbors # add the new neighbors to the edge
         self.join(previous, cell) # connect the new and visited cells
         self.edge.discard(cell) # remove the current cell from the edge
         self.visited.add(cell) # mark the current cell as having been visited
